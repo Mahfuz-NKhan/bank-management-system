@@ -1,4 +1,4 @@
 package bank.management.system;
 
-public class Deposit {
+public class PinChange {
 }
