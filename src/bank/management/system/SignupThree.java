@@ -1,6 +1,6 @@
 package bank.management.system;
 
-import com.sun.tools.jconsole.JConsoleContext;
+//  import com.sun.tools.jconsole.JConsoleContext;
 
 import javax.swing.*;
 import java.awt.*;
@@ -205,16 +205,18 @@ public class SignupThree extends JFrame implements ActionListener {
 
                     JOptionPane.showMessageDialog(null, "Card Number:" + cardnumber+ "\n Pin:" + pinnumber);
 
-//                    //signup2
-//                    setVisible(false);
-//                    new SignupThree(formno).setVisible(true);
+                   //deposit
+                    setVisible(false);
+                    new Deposit(pinnumber).setVisible(false);
                 }
             } catch (Exception e) {
                 System.out.println(e);
             }
 
         } else if (ae.getSource() == cancel) {
-            
+            setVisible(false);
+            new Login().setVisible(true);
+
         }
     }
     public static void main(String[] args) {
